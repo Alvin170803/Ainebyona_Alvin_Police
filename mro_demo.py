@@ -1,23 +1,22 @@
 class Device:
     def info(self):
-        print("Device info")
+        print("Device's info")
 
 class Phone(Device):
     def info(self):
-        print("Phone info")
+        print("Phone's info")
 
 class Camera(Device):
     def info(self):
-        print("Camera info")
+        print("Camera stats info")
 
 class Smartphone(Phone, Camera):
-    # pass
-    def info(self):
-        print('Touchscreen info')
+     pass #prints the method of the first class it inherits from which is Phone because it doesn't have its own method
+    # def info(self):
+    #     print('Touchscreen info')
 
-# Demo
 s = Smartphone()
 s.info()  # Output: Phone info
 
-# Check MRO
+# Checks Method resolution order
 print(Smartphone.__mro__)
