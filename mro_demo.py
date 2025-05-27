@@ -16,7 +16,7 @@ class Smartphone(Phone, Camera):
     #     print('Touchscreen info')
 
 s = Smartphone()
-s.info()  # Output: Phone info
+s.info() 
 
 # Checks Method resolution order
 print(Smartphone.__mro__)
